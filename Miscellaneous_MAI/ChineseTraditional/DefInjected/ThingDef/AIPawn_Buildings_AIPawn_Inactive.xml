@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AIPawn_Inactive.label>移動人工智能（未激活）</AIPawn_Inactive.label>
+  <AIPawn_Inactive.description>這個人工智能需要激活後才能運作起來。</AIPawn_Inactive.description>
+
+
+</LanguageData>

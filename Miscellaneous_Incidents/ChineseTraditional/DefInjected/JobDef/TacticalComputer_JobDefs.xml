@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Miscellaneous Jobs -->
+
+  <GotoCellAndDraft.reportString>前往集合點。</GotoCellAndDraft.reportString>
+  <LeaveMapForAnomaly.reportString>調查異常現象。</LeaveMapForAnomaly.reportString>
+
+
+  <!-- Joy giving jobs -->
+
+  <PlayTacticalComputer.reportString>正在玩邊緣爭霸遊戲。</PlayTacticalComputer.reportString>
+  <PlayComputerTerminal.reportString>上網衝浪。</PlayComputerTerminal.reportString>
+
+
+</LanguageData>

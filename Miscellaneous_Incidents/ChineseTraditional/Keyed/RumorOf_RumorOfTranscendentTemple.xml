@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Incident - Rumor of an old transcendent temple -->
+  <RumorOfTranscendTemple_InitialMessage>當你坐下和來自{1}的朋友聊天的時候，{0}告訴你傳聞附近有一座古代神廟。有人說那是一個卓越的種族所遺留下來的神廟。{0}說HE知道神廟在哪裡。\n\n你想要調查這個傳聞嗎？\n有可能什麼都得不到，也有可能像HE說的那樣你可以在那裡找到一些不錯的東西。</RumorOfTranscendTemple_InitialMessage>
+  <RumorOfTranscendTemple_InitialMessageButtonAccept>同意</RumorOfTranscendTemple_InitialMessageButtonAccept>
+  <RumorOfTranscendTemple_InitialMessageButtonReject>拒絕</RumorOfTranscendTemple_InitialMessageButtonReject>
+  <RumorOfTranscendTemple_InitialMessageRejected>你沒有理會{0}所說的傳聞並無視了HIM。</RumorOfTranscendTemple_InitialMessageRejected>
+
+  <RumorOfTranscendTemple_SelectPawnsMessage>選擇殖民者派往軍事基地。\n注意：他們會離開約{0}天！</RumorOfTranscendTemple_SelectPawnsMessage>
+  <RumorOfTranscendTemple_ButtonAssign>分配進隊伍</RumorOfTranscendTemple_ButtonAssign>
+  <RumorOfTranscendTemple_ButtonAssignError>你不能派出全部人。必須有人留守殖民地！</RumorOfTranscendTemple_ButtonAssignError>
+  <RumorOfTranscendTemple_ButtonUnassign>從隊伍中移除</RumorOfTranscendTemple_ButtonUnassign>
+  <RumorOfTranscendTemple_ButtonAbort>放棄任務</RumorOfTranscendTemple_ButtonAbort>
+  <RumorOfTranscendTemple_ButtonPostpone>延期6小時</RumorOfTranscendTemple_ButtonPostpone>
+  <RumorOfTranscendTemple_ButtonSend>派遣殖民者</RumorOfTranscendTemple_ButtonSend>
+  <RumorOfTranscendTemple_ButtonSendError>無法派遣。未分配人員。</RumorOfTranscendTemple_ButtonSendError>
+
+  <RumorOfTranscendTemple_LetterLabel_Returned>隊伍返回</RumorOfTranscendTemple_LetterLabel_Returned>
+  <RumorOfTranscendTemple_Message_ReturnedBase>你的隊伍已從古代神廟返回。</RumorOfTranscendTemple_Message_ReturnedBase>
+  <RumorOfTranscendTemple_Message_ReturnedNoTreasure>他們找到了古代神廟，但經過仔細的搜查後，你的隊伍什麼也沒有找到。\n看來所謂卓越的種族也只是傳說的。</RumorOfTranscendTemple_Message_ReturnedNoTreasure>
+  <RumorOfTranscendTemple_Message_ReturnedWithTreasure>他們找到了一些古老的廢墟。\n經過仔細的搜查後，你的隊伍找到了未知的地下神廟的入口。\n神廟莊嚴而雄偉，證明有一個古老卓越種族曾經生活在這顆行星上。\n不幸的是，他們無意中觸發了自毀裝置導致這座神廟被熔岩淹沒。\n你的人以最快的速度從這個死亡陷阱中逃了出來。大多數寶物在混亂中丟失了，但他們還是留下了……</RumorOfTranscendTemple_Message_ReturnedWithTreasure>
+  <RumorOfTranscendTemple_Message_ReturnedWithEnemy>小心，有人在跟蹤他們！</RumorOfTranscendTemple_Message_ReturnedWithEnemy>
+
+</LanguageData>

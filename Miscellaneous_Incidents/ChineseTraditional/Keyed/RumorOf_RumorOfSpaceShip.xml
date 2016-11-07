@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Incident - Rumor of an old space ship -->
+  <RumorOfSpaceShip_InitialMessage>當你坐下和來自{1}的朋友聊天的時候，{0}告訴你傳聞附近有一座廢舊的宇宙飛船。HECAP說船艙部分看起來基本完好無損，很可能還保留著一些有價值的寶物。\n\n你想要調查這個傳聞嗎？\n有可能什麼都得不到，也有可能像HE說的那樣你可以在那裡找到一些不錯的東西。</RumorOfSpaceShip_InitialMessage>
+  <RumorOfSpaceShip_InitialMessageButtonAccept>同意</RumorOfSpaceShip_InitialMessageButtonAccept>
+  <RumorOfSpaceShip_InitialMessageButtonReject>拒絕</RumorOfSpaceShip_InitialMessageButtonReject>
+  <RumorOfSpaceShip_InitialMessageRejected>你沒有理會{0}所說的傳聞並無視了HIM。</RumorOfSpaceShip_InitialMessageRejected>
+
+  <RumorOfSpaceShip_SelectPawnsMessage>選擇殖民者派往宇宙飛船。\n注意：他們會離開約{0}天！</RumorOfSpaceShip_SelectPawnsMessage>
+  <RumorOfSpaceShip_ButtonAssign>分配進隊伍</RumorOfSpaceShip_ButtonAssign>
+  <RumorOfSpaceShip_ButtonAssignError>你不能派出全部人。必須有人留守殖民地！</RumorOfSpaceShip_ButtonAssignError>
+  <RumorOfSpaceShip_ButtonUnassign>從隊伍中移除</RumorOfSpaceShip_ButtonUnassign>
+  <RumorOfSpaceShip_ButtonAbort>放棄任務</RumorOfSpaceShip_ButtonAbort>
+  <RumorOfSpaceShip_ButtonPostpone>延期6小時</RumorOfSpaceShip_ButtonPostpone>
+  <RumorOfSpaceShip_ButtonSend>派遣殖民者</RumorOfSpaceShip_ButtonSend>
+  <RumorOfSpaceShip_ButtonSendError>無法派遣。未分配人員。</RumorOfSpaceShip_ButtonSendError>
+
+  <RumorOfSpaceShip_LetterLabel_Returned>隊伍返回</RumorOfSpaceShip_LetterLabel_Returned>
+  <RumorOfSpaceShip_Message_ReturnedBase>你的隊伍已從宇宙飛船返回。</RumorOfSpaceShip_Message_ReturnedBase>
+  <RumorOfSpaceShip_Message_ReturnedNoTreasure>他們找到了一個深坑，但那是墜毀的宇宙飛船造成的嗎？\n經過仔細的搜查後，你的隊伍沒有找到任何東西。如果宇宙飛船曾經在那裡，那麼它現在已經離開了。</RumorOfSpaceShip_Message_ReturnedNoTreasure>
+  <RumorOfSpaceShip_Message_ReturnedWithTreasure>他們找到了一個深坑。看起來像是某種大傢伙墜毀在陸地上。\n經過仔細的搜查，你的隊伍找到了進入船艙的的入口。裡面是嶄新的地板和明亮的走廊，但還有少量的輻射，導致他們無法滯留太長時間。\n但在裡面他們也找到了一些有價值的東西。他們帶回了……</RumorOfSpaceShip_Message_ReturnedWithTreasure>
+  <RumorOfSpaceShip_Message_ReturnedWithEnemy>小心，他們提到有人跟蹤他們！</RumorOfSpaceShip_Message_ReturnedWithEnemy>
+
+</LanguageData>

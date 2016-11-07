@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TacticalComputerExtension.label>電腦終端</TacticalComputerExtension.label>
+  <TacticalComputerExtension.description>這種電腦提供遠程操作戰術電腦上部分選項的功能。\n注意：必須要有一台戰術電腦！</TacticalComputerExtension.description>
+
+
+</LanguageData>

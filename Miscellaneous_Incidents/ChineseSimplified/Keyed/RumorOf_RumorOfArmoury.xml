@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Incident - Rumor of High Tech Armoury -->
+  <RumorOfArmoury_InitialMessage>当你坐下和来自{1}的朋友聊天的时候，{0}告诉你传闻附近有一座废弃的军事基地。HECAP说你可以在那里找到不计其数的宝物。\n\n你想要调查这个传闻吗？\n有可能什么都得不到，也有可能像HE说的那样你可以在那里找到一些不错的东西。</RumorOfArmoury_InitialMessage>
+  <RumorOfArmoury_InitialMessageButtonAccept>同意</RumorOfArmoury_InitialMessageButtonAccept>
+  <RumorOfArmoury_InitialMessageButtonReject>拒绝</RumorOfArmoury_InitialMessageButtonReject>
+  <RumorOfArmoury_InitialMessageRejected>你没有理会{0}所说的传闻并无视了HIM。</RumorOfArmoury_InitialMessageRejected>
+
+  <RumorOfArmoury_SelectPawnsMessage>选择殖民者派往军事基地。\n注意：他们会离开约{0}天！</RumorOfArmoury_SelectPawnsMessage>
+  <RumorOfArmoury_ButtonAssign>分配进队伍</RumorOfArmoury_ButtonAssign>
+  <RumorOfArmoury_ButtonAssignError>你不能派出全部人。必须有人留守殖民地！</RumorOfArmoury_ButtonAssignError>
+  <RumorOfArmoury_ButtonUnassign>从队伍中移除</RumorOfArmoury_ButtonUnassign>
+  <RumorOfArmoury_ButtonAbort>放弃任务</RumorOfArmoury_ButtonAbort>
+  <RumorOfArmoury_ButtonPostpone>延期6小时</RumorOfArmoury_ButtonPostpone>
+  <RumorOfArmoury_ButtonSend>派遣殖民者</RumorOfArmoury_ButtonSend>
+  <RumorOfArmoury_ButtonSendError>无法派遣。未分配人员。</RumorOfArmoury_ButtonSendError>
+
+  <RumorOfArmoury_LetterLabel_Returned>队伍返回</RumorOfArmoury_LetterLabel_Returned>
+  <RumorOfArmoury_Message_ReturnedBase>你的队伍已从军事基地返回。</RumorOfArmoury_Message_ReturnedBase>
+  <RumorOfArmoury_Message_ReturnedNoTreasure>他们找到了军事基地。那是一处庞大的建筑群，看上去应该是几百年前建造的。\n他们对整片地区进行了细致的搜查，除了枝蔓丛生的墙壁、发霉的垃圾和碎瓦砾外一无所获。所有好材料都在很久很久以前被掠夺一空。根本找不到任何有价值的东西。</RumorOfArmoury_Message_ReturnedNoTreasure>
+  <RumorOfArmoury_Message_ReturnedWithTreasure>他们找到了军事基地。那是一处庞大的建筑群，看上去应该是几百年前建造的。\n经过细致的搜查后，你的队伍在一堵枝蔓丛生的墙壁后面发现了一个原封未动的军械库。里面布满了灰尘、杂物和垃圾。\n但他们也找到了一些有价值的东西。他们带回了……</RumorOfArmoury_Message_ReturnedWithTreasure>
+  <RumorOfArmoury_Message_ReturnedWithEnemy>小心，他们被某个势力发现并被跟踪了！</RumorOfArmoury_Message_ReturnedWithEnemy>
+
+</LanguageData>

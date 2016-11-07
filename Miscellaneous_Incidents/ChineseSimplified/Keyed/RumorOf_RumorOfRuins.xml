@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Incident - Rumor of Ruins -->
+  <RumorOfRuins_InitialMessage>当你坐下和来自{1}的朋友聊天的时候，{0}告诉你传闻附近有一片遗迹。HECAP说你可以在那里找到不计其数的宝物。\n\n你想要调查这个传闻吗？\n有可能什么都得不到，也有可能像HE说的那样你可以在那里找到一些不错的东西。</RumorOfRuins_InitialMessage>
+  <RumorOfRuins_InitialMessageButtonAccept>同意</RumorOfRuins_InitialMessageButtonAccept>
+  <RumorOfRuins_InitialMessageButtonReject>拒绝</RumorOfRuins_InitialMessageButtonReject>
+  <RumorOfRuins_InitialMessageRejected>你没有理会{0}所说的传闻并无视了HIM。</RumorOfRuins_InitialMessageRejected>
+
+  <RumorOfRuins_SelectPawnsMessage>选择殖民者派往遗迹。\n注意：他们会离开约{0}天！</RumorOfRuins_SelectPawnsMessage>
+  <RumorOfRuins_ButtonAssign>分配进队伍</RumorOfRuins_ButtonAssign>
+  <RumorOfRuins_ButtonAssignError>你不能派出全部人。必须有人留守殖民地！</RumorOfRuins_ButtonAssignError>
+  <RumorOfRuins_ButtonUnassign>从队伍中移除</RumorOfRuins_ButtonUnassign>
+  <RumorOfRuins_ButtonAbort>放弃任务</RumorOfRuins_ButtonAbort>
+  <RumorOfRuins_ButtonPostpone>延期6小时</RumorOfRuins_ButtonPostpone>
+  <RumorOfRuins_ButtonSend>派遣殖民者</RumorOfRuins_ButtonSend>
+  <RumorOfRuins_ButtonSendError>无法派遣。未分配人员。</RumorOfRuins_ButtonSendError>
+
+  <RumorOfRuins_LetterLabel_Returned>队伍返回</RumorOfRuins_LetterLabel_Returned>
+  <RumorOfRuins_Message_ReturnedBase>你的队伍已从遗迹返回。</RumorOfRuins_Message_ReturnedBase>
+  <RumorOfRuins_Message_ReturnedNoTreasure>他们找到了一片残垣断壁，看上去应该是一座城堡或者类似的建筑的一部分。\n但是经过细致的搜查，除了枝蔓丛生的墙壁、发霉的垃圾和碎瓦砾外一无所获。根本找不到任何有价值的东西。</RumorOfRuins_Message_ReturnedNoTreasure>
+  <RumorOfRuins_Message_ReturnedWithTreasure>他们找到了一片残垣断壁，看上去应该是一座城堡或者类似的建筑的一部分。\n经过细致的搜查，你的队伍在一堵藤蔓丛生的墙壁后面找到了一间密室。里面布满了灰尘、杂物和垃圾。\n但他们也找到了一些有价值的东西。他们带回了……</RumorOfRuins_Message_ReturnedWithTreasure>
+  <RumorOfRuins_Message_ReturnedWithEnemy>小心，他们提到有人跟踪他们！</RumorOfRuins_Message_ReturnedWithEnemy>
+
+</LanguageData>

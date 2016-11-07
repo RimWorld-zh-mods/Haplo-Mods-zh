@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Incident - Rumor of Slaver Camp -->
+  <RumorOfSlaverCamp_InitialMessage>當你坐下和來自{1}的朋友聊天的時候，{0}告訴你傳聞附近有一座奴隸營地。HECAP說他們抓走了HIS妹妹並請求你協助埋伏他們以解救HIS妹妹。\n\n你想要協助這個計劃嗎？</RumorOfSlaverCamp_InitialMessage>
+  <RumorOfSlaverCamp_InitialMessageButtonAccept>同意</RumorOfSlaverCamp_InitialMessageButtonAccept>
+  <RumorOfSlaverCamp_InitialMessageButtonReject>拒絕</RumorOfSlaverCamp_InitialMessageButtonReject>
+  <RumorOfSlaverCamp_InitialMessageRejected>你表示沒空理他。{0}流著淚，心煩意亂地離開了。</RumorOfSlaverCamp_InitialMessageRejected>
+
+  <RumorOfSlaverCamp_SelectPawnsMessage>選擇殖民者派往奴隸營地。\n注意：他們會離開約{0}天！</RumorOfSlaverCamp_SelectPawnsMessage>
+  <RumorOfSlaverCamp_ButtonAssign>分配進隊伍</RumorOfSlaverCamp_ButtonAssign>
+  <RumorOfSlaverCamp_ButtonAssignError>>你不能派出全部人。必須有人留守殖民地！</RumorOfSlaverCamp_ButtonAssignError>
+  <RumorOfSlaverCamp_ButtonUnassign>從隊伍中移除</RumorOfSlaverCamp_ButtonUnassign>
+  <RumorOfSlaverCamp_ButtonAbort>放棄任務</RumorOfSlaverCamp_ButtonAbort>
+  <RumorOfSlaverCamp_ButtonPostpone>延期6小時</RumorOfSlaverCamp_ButtonPostpone>
+  <RumorOfSlaverCamp_ButtonSend>派遣殖民者</RumorOfSlaverCamp_ButtonSend>
+  <RumorOfSlaverCamp_ButtonSendError>無法派遣。未分配人員。</RumorOfSlaverCamp_ButtonSendError>
+
+  <RumorOfSlaverCamp_LetterLabel_Returned>隊伍返回</RumorOfSlaverCamp_LetterLabel_Returned>
+  <RumorOfSlaverCamp_Message_ReturnedBase>你的隊伍已從奴隸營地返回。</RumorOfSlaverCamp_Message_ReturnedBase>
+  <RumorOfSlaverCamp_Message_ReturnedNoTreasure>他們沒有找到營地。\n如果營地確實曾經在那裡，那麼就是你去得太晚並且他們很久前就已經離開了。</RumorOfSlaverCamp_Message_ReturnedNoTreasure>
+  <RumorOfSlaverCamp_Message_ReturnedWithTreasure>他們找到了營地，隱秘地偵查並給營地準備了一場伏擊。\n經過一場短小的戰鬥營地陷入癱瘓之中。\n小心地四處呼喚之後，他們發現了妹妹。一場含淚團聚。\n他們還在一個箱子中發現了一些有價值的東西。他們帶回了……</RumorOfSlaverCamp_Message_ReturnedWithTreasure>
+  <RumorOfSlaverCamp_Message_ReturnedWithEnemy>小心，一些活下來的奴隸販子意圖復仇！</RumorOfSlaverCamp_Message_ReturnedWithEnemy>
+
+  <RumorOfSlaverCamp_Message_ReturnedWithNewColonist>奴隸之中有一個位想要加入你的殖民地。請迎接NAME。</RumorOfSlaverCamp_Message_ReturnedWithNewColonist>
+
+</LanguageData>

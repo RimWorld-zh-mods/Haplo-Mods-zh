@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <NanoPrinter.label>納米打印機</NanoPrinter.label>
+  <NanoPrinter.description>納米打印機可以對武器進行複製。注意：複製品的品質可能不是最好的。</NanoPrinter.description>
+
+  <NanoScanner.label>納米掃描儀</NanoScanner.label>
+  <NanoScanner.description>協同納米打印機，對武器的內部結構進行掃描。</NanoScanner.description>
+
+
+</LanguageData>

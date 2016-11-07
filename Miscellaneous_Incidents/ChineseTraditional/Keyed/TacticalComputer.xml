@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Tactical Computer -->
+	<TacticalComputer_Offline>-= 離線 =-</TacticalComputer_Offline>
+	<TacticalComputer_Colonist>殖民者</TacticalComputer_Colonist>
+	<TacticalComputer_Prisoner>囚犯</TacticalComputer_Prisoner>
+	<TacticalComputer_Enemy>敵人</TacticalComputer_Enemy>
+	<TacticalComputer_Friendly>盟友</TacticalComputer_Friendly>
+	<TacticalComputer_Animal>動物</TacticalComputer_Animal>
+	<TacticalComputer_SwitchToNextColonist>切換至下一位殖民者。</TacticalComputer_SwitchToNextColonist>
+	<TacticalComputer_SwitchToNextPrisoner>切換至下一位囚犯。</TacticalComputer_SwitchToNextPrisoner>
+	<TacticalComputer_SwitchToNextEnemy>切換至下一位敵人</TacticalComputer_SwitchToNextEnemy>
+	<TacticalComputer_SwitchToNextFriendly>切換至下一位盟友。</TacticalComputer_SwitchToNextFriendly>
+	<TacticalComputer_SwitchToNextColonyAnimal>切換至下一個殖民地動物。</TacticalComputer_SwitchToNextColonyAnimal>
+	<TacticalComputer_CallColonistsToArms>召集已武裝的殖民者。</TacticalComputer_CallColonistsToArms>
+	
+	<!-- Tactical Computer - Incident Anomaly -->
+	<TacticalComputer_Message_AnomalyFound>你的戰術電腦的掃描器在幾天前檢測到一起異常現象。\n\n如果你想，你可以派遣一個調查小組前往。</TacticalComputer_Message_AnomalyFound>
+	<TacticalComputer_LetterLabel_AnomalyFound>異常現象</TacticalComputer_LetterLabel_AnomalyFound>
+	<TacticalComputer_AnomalyAssignPawns>分配殖民者前往調查異常現象。</TacticalComputer_AnomalyAssignPawns>
+	<TacticalComputer_AnomalySendPawns>派遣分配的殖民者前往調查異常現象。</TacticalComputer_AnomalySendPawns>
+	<TacticalComputer_AnomalySelectPawnsToSend>選擇殖民者派往異常現象。\n注意：他們會離開約{0}天！</TacticalComputer_AnomalySelectPawnsToSend>
+	<TacticalComputer_NooneAssigned>未分配人員。</TacticalComputer_NooneAssigned>
+	<TacticalComputer_AssignColonist>分配進隊伍</TacticalComputer_AssignColonist>
+	<TacticalComputer_UnassignColonist>從隊伍移除</TacticalComputer_UnassignColonist>
+	<TacticalComputer_AssignColonist_Rejected>你不能派出全部人。必須有人留守殖民地！</TacticalComputer_AssignColonist_Rejected>
+	<TacticalComputer_LetterLabel_ReturnFromAnomaly>異常現象報告</TacticalComputer_LetterLabel_ReturnFromAnomaly>
+	<TacticalComputer_Message_ReturnedFromAnomaly>你的隊伍已從調查異常現象回歸。</TacticalComputer_Message_ReturnedFromAnomaly>
+	<TacticalComputer_Message_ReturnedFromAnomaly_FoundNothing>他們發現了一片破舊的廢墟，但沒有什麼有價值的東西。</TacticalComputer_Message_ReturnedFromAnomaly_FoundNothing>
+	<TacticalComputer_Message_ReturnedFromAnomaly_FoundTreasure>他們在一片破舊的廢墟中發現了一個密室。裡面沒什麼有價值的東西，除了……</TacticalComputer_Message_ReturnedFromAnomaly_FoundTreasure>
+	<TacticalComputer_Message_ReturnedFromAnomaly_WithEnemyInPursued>他們還提到有人跟蹤！</TacticalComputer_Message_ReturnedFromAnomaly_WithEnemyInPursued>
+
+	<TacticalComputer_Float_OrderToSleep>前往休息</TacticalComputer_Float_OrderToSleep>
+	<TacticalComputer_Float_OrderToEat>前往進食</TacticalComputer_Float_OrderToEat>
+	<TacticalComputer_Float_GetNewDoorKey>拿新鑰匙</TacticalComputer_Float_GetNewDoorKey>
+	<TacticalComputer_PlacementRestricter_NoTacticalComputerFound>缺少戰術電腦</TacticalComputer_PlacementRestricter_NoTacticalComputerFound>
+
+	<!-- Tactical Computer External Terminal -->
+	<TacticalComputer_CallColonistsToArmsToMe>召集已武裝的殖民者。\n目標：此處</TacticalComputer_CallColonistsToArmsToMe>
+	<TacticalComputer_CallColonistsToArmsToMainComputer>召集已武裝的殖民者。\n目標：戰術電腦</TacticalComputer_CallColonistsToArmsToMainComputer>
+	<TacticalComputer_CallColonistsNotArmedToMe>召集未武裝的殖民者。\n目標：此處</TacticalComputer_CallColonistsNotArmedToMe>
+	<TacticalComputer_CallColonistsNotArmedToMainComputer>召集未武裝的殖民者。\n目標：戰術電腦</TacticalComputer_CallColonistsNotArmedToMainComputer>
+	
+	
+</LanguageData>
