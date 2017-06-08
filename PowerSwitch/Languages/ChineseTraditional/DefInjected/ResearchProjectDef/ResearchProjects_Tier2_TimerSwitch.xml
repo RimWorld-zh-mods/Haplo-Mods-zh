@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ResearchTimerSwitch.label>PS：定時開關</ResearchTimerSwitch.label>
-  <ResearchTimerSwitch.description>研究用於電力開關的定時器。解鎖指定時間自動電力開關。</ResearchTimerSwitch.description>
-  <ResearchTimerSwitch.descriptionDiscovered>現在你的電力開關可以設置為指定時間開關。\n\n注意：不要將你的燈、炮台等直接連接到電力開關上！應該連接到延伸出來的電纜上！</ResearchTimerSwitch.descriptionDiscovered>
-
-
-</LanguageData>
