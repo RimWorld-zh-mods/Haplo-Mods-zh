@@ -2,7 +2,11 @@
 <LanguageData>
 
   <TacticalComputer.label>戰術電腦</TacticalComputer.label>
-  <TacticalComputer.description>這種電腦提供大量的信息和選項。</TacticalComputer.description>
+  <TacticalComputer.description>這種電腦提供各種信息和選項。</TacticalComputer.description>
+  <TacticalComputer_Blueprint.label>戰術電腦（藍圖）</TacticalComputer_Blueprint.label>
+  <TacticalComputer_Blueprint_Install.label>戰術電腦（藍圖）</TacticalComputer_Blueprint_Install.label>
+  <TacticalComputer_Frame.label>戰術電腦（建造中）</TacticalComputer_Frame.label>
+  <TacticalComputer_Frame.description>這種電腦提供各種信息和選項。</TacticalComputer_Frame.description>
 
 
 </LanguageData>

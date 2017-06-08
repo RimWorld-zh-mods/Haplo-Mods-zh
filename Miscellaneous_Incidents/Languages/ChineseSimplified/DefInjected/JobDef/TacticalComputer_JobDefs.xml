@@ -4,13 +4,12 @@
   <!-- Miscellaneous Jobs -->
 
   <GotoCellAndDraft.reportString>前往集合点。</GotoCellAndDraft.reportString>
-  <LeaveMapForAnomaly.reportString>调查异常现象。</LeaveMapForAnomaly.reportString>
 
 
   <!-- Joy giving jobs -->
 
   <PlayTacticalComputer.reportString>正在玩边缘争霸游戏。</PlayTacticalComputer.reportString>
-  <PlayComputerTerminal.reportString>上网冲浪。</PlayComputerTerminal.reportString>
+  <PlayComputerTerminal.reportString>在边缘网上冲浪。</PlayComputerTerminal.reportString>
 
 
 </LanguageData>
