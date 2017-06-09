@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[statBases/AccuracyLong > 0.05]/comps</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[statBases/AccuracyLong > 0.05]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[statBases/AccuracyLong > 0.05]/comps</xpath>
+		<value>
+			<li Class="WeaponRepair.CompProperties_WeaponRepairTwo2One">
+				<worktableDefs>
+					<li>TableMachining</li>
+				</worktableDefs>
+				<allowedDefSubName>Gun_</allowedDefSubName>
+				<compareQuality>true</compareQuality>
+				<jobDef>WeaponRepairTwo2One</jobDef>
+				<workTypeDef>Smithing</workTypeDef>
+				<maxRepair>0.95</maxRepair>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>
+
