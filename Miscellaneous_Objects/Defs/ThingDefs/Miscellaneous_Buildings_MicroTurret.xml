@@ -198,13 +198,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>InteractRifle</soundInteract>
 		<statBases>
-			<MarketValue>1950</MarketValue>
-			<WorkToMake>98000</WorkToMake>
-			<Mass>11</Mass>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>8</Mass>
 			<AccuracyTouch>0.35</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.50</AccuracyMedium>
-			<AccuracyLong>0.45</AccuracyLong>
+			<AccuracyLong>0.35</AccuracyLong>
 			<RangedWeapon_Cooldown>4.45</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -217,7 +216,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<projectileDef>Bullet_MicroThingSpawnerMKI</projectileDef>
 				<warmupTime>2.5</warmupTime>
-				<range>25</range>
+				<range>27</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

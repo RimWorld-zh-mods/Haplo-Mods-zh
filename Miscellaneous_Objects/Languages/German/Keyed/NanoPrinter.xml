@@ -6,7 +6,7 @@
 	<NanoPrinter_ErrorDescr>Ein Fehler ist aufgetreten. Clicken zum Zurücksetzen.</NanoPrinter_ErrorDescr>
 	<NanoPrinter_Start>Start</NanoPrinter_Start>
 	<NanoPrinter_Stop>Stop</NanoPrinter_Stop>
-	<NanoPrinter_ScanningNoHoppersFound>Kein angrenzendes Scanner-Element gefunden.</NanoPrinter_ScanningNoHoppersFound>
+	<NanoPrinter_ScanningNoHoppersFound>Kein Scanner gefunden.</NanoPrinter_ScanningNoHoppersFound>
 	<NanoPrinter_ScanningNoItemsFound>Kein scannbares Objekt erkannt.</NanoPrinter_ScanningNoItemsFound>
 	<NanoPrinter_ActiveBlueprint>Eingescannt:</NanoPrinter_ActiveBlueprint>
 	<NanoPrinter_ActiveStatus>Status:</NanoPrinter_ActiveStatus>
