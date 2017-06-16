@@ -7,8 +7,8 @@
   <AIPawn_StartProduction>開始生產。</AIPawn_StartProduction>
   <AIPawn_StopProduction>停止生產。</AIPawn_StopProduction>
   <AIPawn_ProductionRunning>生產中……</AIPawn_ProductionRunning>
-  <AIPawn_ProductionRunningSign>-&gt;</AIPawn_ProductionRunningSign>
-  <AIPawn_OutputBlocked>Output blocked. Production can not start.</AIPawn_OutputBlocked>
+  <AIPawn_ProductionRunningSign>-></AIPawn_ProductionRunningSign>
+  <AIPawn_OutputBlocked>出口被阻塞，無法開始生產。</AIPawn_OutputBlocked>
 
   <!-- AIPawnGenerator -->
   <AIPawn_Basename_first>MAI</AIPawn_Basename_first>

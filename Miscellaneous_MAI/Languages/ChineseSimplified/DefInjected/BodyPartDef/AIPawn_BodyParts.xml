@@ -5,7 +5,6 @@
 
   <AIPawn_Thorax.label>胸部</AIPawn_Thorax.label>
   <AIPawn_Neck.label>颈部</AIPawn_Neck.label>
-  <AIPawn_Head.label>头</AIPawn_Head.label>
   <AIPawn_ArtificialBrain.label>中央处理单元</AIPawn_ArtificialBrain.label>
   <AIPawn_UnneededData.label>中央记忆单元</AIPawn_UnneededData.label>
   <AIPawn_SpeakerDevice.label>发声器</AIPawn_SpeakerDevice.label>
