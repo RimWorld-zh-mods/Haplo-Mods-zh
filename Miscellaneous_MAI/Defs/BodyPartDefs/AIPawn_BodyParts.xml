@@ -20,14 +20,15 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Talking_way</li>
-		<li>Breathing_way</li>
-		<li>Eating_way</li>
-	</activities>
+	<tags>
+		<li>TalkingPathway</li>
+		<li>BreathingPathway</li>
+		<li>EatingPathway</li>
+	</tags>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
   
+  <!--
   <BodyPartDef>
     <defName>AIPawn_Head</defName>
     <label>Head</label>
@@ -35,7 +36,9 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>true</skinCovered>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
+    <bleedingRateMultiplier>2</bleedingRateMultiplier>
   </BodyPartDef>
+  -->
   
   <BodyPartDef>
 	<defName>AIPawn_ArtificialBrain</defName>
@@ -44,15 +47,11 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Consciousness_brain</li>
-		<li>Sight_brain</li>
-		<li>Hearing_brain</li>
-		<li>Moving_brain</li>
-		<li>Manipulation_brain</li>
-		<li>Manipulation_humerus</li>
-		<li>Manipulation_radius</li>
-	</activities>
+	<tags>
+		<li>ConsciousnessSource</li>
+		<li>SightSource</li>
+		<li>HearingSource</li>
+	</tags>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
   
@@ -63,9 +62,10 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Breathing_main</li>
-	</activities>
+	<tags>
+		<li>BreathingSource</li>
+		<li>BreathingPathway</li>
+	</tags>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
   
@@ -76,11 +76,10 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Talking</li>
-		<li>Eating_source</li>
-		<li>Talking_source</li>
-	</activities>
+	<tags>
+		<li>EatingSource</li>
+		<li>TalkingSource</li>
+	</tags>
   </BodyPartDef>
   
   <BodyPartDef>
@@ -89,12 +88,9 @@
 	<hitPoints>20</hitPoints>
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
-	<activities>
-		<li>BloodPumping</li>
-		<li>BloodFiltration_kidney</li>
-		<li>BloodFiltration_liver</li>
-		<li>Metabolism</li>
-	</activities>
+	<tags>
+      <li>BreathingPathway</li>
+	</tags>
   </BodyPartDef>
   
   <BodyPartDef>
@@ -103,12 +99,9 @@
 	<hitPoints>20</hitPoints>
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
-	<activities>
-		<li>BloodPumping</li>
-		<li>BloodFiltration_kidney</li>
-		<li>BloodFiltration_liver</li>
-		<li>Metabolism</li>
-	</activities>
+	<tags>
+      <li>BreathingPathway</li>
+	</tags>
   </BodyPartDef>
   
   <BodyPartDef>
@@ -117,9 +110,9 @@
 	<hitPoints>10</hitPoints>
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
-	<activities>
-		<li>Eating_digestion</li>
-	</activities>
+	<tags>
+		<li>EatingDigestion</li>
+	</tags>
   </BodyPartDef>
   
   <BodyPartDef>
@@ -129,10 +122,9 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>false</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Moving_spine</li>
-		<li>Manipulation_spine</li>
-	</activities>
+	<tags>
+		<li>Spine</li>
+	</tags>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
   
@@ -143,9 +135,9 @@
 	<oldInjuryBaseChance>0</oldInjuryBaseChance>
 	<skinCovered>true</skinCovered>
 	<isSolid>true</isSolid>
-	<activities>
-		<li>Moving_pelvis</li>
-	</activities>
+	<tags>
+		<li>Pelvis</li>
+	</tags>
 	<dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
   

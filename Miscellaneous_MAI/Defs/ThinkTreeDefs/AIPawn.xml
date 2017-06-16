@@ -10,18 +10,26 @@
 					<subNodes>
 						<li Class="ThinkNode_ChancePerHour_Lovin">
 							<subNodes>
-								<li Class="JobGiver_DoLovin" />
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>SatisfyingNeeds</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_DoLovin" />
+									</subNodes>
+								</li>
 							</subNodes>
 						</li>
 					</subNodes>
 				</li>
-
 				<!-- If we HAVE to keep lying down... -->
 				<li Class="ThinkNode_ConditionalMustKeepLyingDown">
 					<subNodes>
 						<!-- Get joy -->
-						<li Class="JobGiver_GetJoyInBed" />
-
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>SatisfyingNeeds</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_GetJoyInBed" />
+							</subNodes>
+						</li>
 						<!-- Keep lying down -->
 						<li Class="JobGiver_KeepLyingDown" />
 					</subNodes>
@@ -53,10 +61,14 @@
 				<!-- Take direct orders when drafted -->
 				<li Class="ThinkNode_ConditionalColonist">
 					<subNodes>
-						<li Class="JobGiver_Orders" />
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>DraftedOrder</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_Orders" />
+							</subNodes>
+						</li>
 					</subNodes>
 				</li>
-
 				<!-- Lord directives (high priority) -->
 				<li Class="ThinkNode_JoinVoluntarilyJoinableLord">
 					<dutyHook>HighPriority</dutyHook>
@@ -76,66 +88,116 @@
 				<li Class="ThinkNode_ConditionalPrisoner">
 					<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
 					<subNodes>
-						<li Class="JobGiver_PrisonerEscape" />
-						<li Class="JobGiver_PatientGoToBed" />
-						<!-- <li Class="JobGiver_PrisonerGetDressed" /> -->
-						<li Class="ThinkNode_PrioritySorter">
-							<subNodes>
-								<li Class="JobGiver_GetFood"/>
-								<li Class="AIPawn.JobGiver_RechargeEnergy"/>
-								<li Class="ThinkNode_Priority_GetJoy">
-									<subNodes>
-										<li Class="JobGiver_GetJoy"/>
-									</subNodes>
-								</li>
-							</subNodes>
-						</li>
-						<li Class="ThinkNode_ConditionalReleased">
-							<subNodes>
-								<li Class="JobGiver_ExitMapBest">
-									<defaultLocomotion>Walk</defaultLocomotion>
-								</li>
-							</subNodes>
-						</li>
-						<!-- If in non-PlayerHomeMap -->
+						<!-- If it's the player home map... -->
 						<li Class="ThinkNode_ConditionalInNonPlayerHomeMap">
+							<invert>true</invert>
 							<subNodes>
-								<!-- There is a caravan nearby -->
-								<li Class="ThinkNode_ConditionalAnyAutoJoinableCaravan">
+								<!-- Wait instead of escaping if should -->
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Idle</tagToGive>
 									<subNodes>
-										<!-- Exit map and join the caravan -->
-										<li Class="JobGiver_ExitMapBest">
-											<failIfCantJoinOrCreateCaravan>true</failIfCantJoinOrCreateCaravan>
-											<!-- in case the caravan moves before we manage to exit the map -->
-										</li>
-									</subNodes>
-								</li>
-								<!-- Any colonist is now on his way to exit the map -->
-								<li Class="ThinkNode_ConditionalAnyColonistTryingToExitMap">
-									<subNodes>
-										<!-- Wander near the map edge -->
-										<li Class="JobGiver_WanderMapEdge">
-											<locomotionUrgency>Jog</locomotionUrgency>
+										<li Class="JobGiver_PrisonerWaitInsteadOfEscaping">
 											<maxDanger>Deadly</maxDanger>
 										</li>
 									</subNodes>
 								</li>
-								<!-- No colonist spawned in the map -->
-								<li Class="ThinkNode_ConditionalAnyUndownedColonistSpawnedNearby">
-									<invert>true</invert>
+
+								<!-- Escape -->
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Escaping</tagToGive>
 									<subNodes>
 										<li Class="JobGiver_PrisonerEscape" />
 									</subNodes>
 								</li>
+							</subNodes>
+						</li>
+
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>RestingForMedicalReasons</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_PatientGoToBed" />
+							</subNodes>
+						</li>
+
+						<!--
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>ChangingApparel</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_PrisonerGetDressed" />
+							</subNodes>
+						</li>
+-->
+						
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>SatisfyingNeeds</tagToGive>
+							<subNodes>
+								<li Class="ThinkNode_PrioritySorter">
+									<subNodes>
+										<li Class="JobGiver_GetFood"/>
+										<li Class="AIPawn.JobGiver_RechargeEnergy"/>
+										<li Class="ThinkNode_Priority_GetJoy">
+											<subNodes>
+												<li Class="JobGiver_GetJoy"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+
+						<li Class="ThinkNode_ConditionalReleased">
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_ExitMapBest">
+											<defaultLocomotion>Walk</defaultLocomotion>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+
+						<!-- Join auto joinable caravan -->
+						<li Class="ThinkNode_Subtree">
+							<treeDef>JoinAutoJoinableCaravan</treeDef>
+						</li>
+						<!-- If in non-PlayerHomeMap -->
+						<li Class="ThinkNode_ConditionalInNonPlayerHomeMap">
+							<subNodes>
+								<!-- No colonist spawned in the map -->
+								<li Class="ThinkNode_ConditionalAnyUndownedColonistSpawnedNearby">
+									<invert>true</invert>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Escaping</tagToGive>
+											<subNodes>
+												<li Class="JobGiver_PrisonerEscape" />
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
 								<!-- Wander -->
-								<li Class="JobGiver_WanderColony">
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Idle</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_WanderColony">
+											<maxDanger>Deadly</maxDanger>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>Idle</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_WanderCurrentRoom">
 									<maxDanger>Deadly</maxDanger>
 								</li>
 							</subNodes>
 						</li>
-						<li Class="JobGiver_WanderCurrentRoom">
-							<maxDanger>Deadly</maxDanger>
-						</li>
+
 						<li Class="JobGiver_IdleError" />
 					</subNodes>
 				</li>
@@ -143,11 +205,6 @@
 				<!-- If on colonist team, do forced and emergency work -->
 				<li Class="ThinkNode_ConditionalColonist">
 					<subNodes>
-						<!-- Queue for forced work -->
-						<li Class="JobGiver_JobQueue">
-							<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
-						</li>
-
 						<!-- Seek allowed area -->
 						<li Class="JobGiver_SeekAllowedArea" />
 
@@ -160,8 +217,13 @@
 						<!-- Get food (only if starving) -->
 						<li Class="ThinkNode_ConditionalStarving">
 							<subNodes>
-								<li Class="JobGiver_GetFood">
-									<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>SatisfyingNeeds</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_GetFood">
+											<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+										</li>
+									</subNodes>
 								</li>
 							</subNodes>
 						</li>
@@ -182,21 +244,35 @@
 							</subNodes>
 						</li>
 
-						<!-- Optimize apparel -->
-						<!-- <li Class="JobGiver_OptimizeApparel">
-							<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
-						</li> -->
+						<!-- Optimize apparel 
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>ChangingApparel</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_OptimizeApparel">
+									<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+								</li>
+							</subNodes>
+						</li>
+						-->
 
-						<!-- Pack food if not hungry
-            <li Class="ThinkNode_ConditionalNeedPercentageAbove">
-              <need>Food</need>
-              <threshold>0.6</threshold>
-              <subNodes>
-                <li Class="JobGiver_PackFood">
-                  <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
-                </li>
-              </subNodes>
-            </li> -->
+						<!-- Unload your inventory -->
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>UnloadingOwnInventory</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_UnloadYourInventory" />
+							</subNodes>
+						</li>
+
+						<!-- Pack food if not hungry-->
+						<li Class="ThinkNode_ConditionalNeedPercentageAbove">
+							<need>Food</need>
+							<threshold>0.6</threshold>
+							<subNodes>
+								<li Class="JobGiver_PackFood">
+									<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+								</li>
+							</subNodes>
+						</li>
 					</subNodes>
 				</li>
 
@@ -211,19 +287,9 @@
 				<!-- Main colonist behavior core-->
 				<li Class="ThinkNode_ConditionalColonist">
 					<subNodes>
-						<li Class="ThinkNode_PrioritySorter">
+						<li Class="ThinkNode_Subtree">
+							<treeDef>MainAIRobotBehaviorCore</treeDef>
 							<leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
-							<subNodes>
-								<li Class="JobGiver_GetFood"/>
-								<li Class="AIPawn.JobGiver_RechargeEnergy"/>
-								<li Class="ThinkNode_Priority_GetJoy">
-									<subNodes>
-										<li Class="JobGiver_GetJoyInBed"/>
-										<li Class="JobGiver_GetJoy"/>
-									</subNodes>
-								</li>
-								<li Class="JobGiver_Work"/>
-							</subNodes>
 						</li>
 					</subNodes>
 				</li>
@@ -233,7 +299,7 @@
 					<insertTag>Humanlike_PostMain</insertTag>
 				</li>
 
-				<!-- Idle wander for colonists -->
+				<!-- Idle colonist -->
 				<li Class="ThinkNode_ConditionalColonist">
 					<subNodes>
 						<li Class="ThinkNode_Tagger">
@@ -258,15 +324,25 @@
 					</subNodes>
 				</li>
 
-				<!-- If you're a neutral non-prisoner, if you're not bleeding exit the map, otherwise wander the room -->
-				<li Class="ThinkNode_ConditionalPrisoner">
-					<invert>true</invert>
+				<!-- If you're a neutral guest, if you're not hurt exit the map, otherwise use a medical bed -->
+				<li Class="ThinkNode_ConditionalGuest">
 					<subNodes>
 						<li Class="ThinkNode_ConditionalNeutralFaction">
 							<subNodes>
-								<li Class="JobGiver_PatientGoToBed" />
-								<li Class="JobGiver_ExitMapBest">
-									<defaultLocomotion>Walk</defaultLocomotion>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>RestingForMedicalReasons</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_PatientGoToBed" />
+									</subNodes>
+								</li>
+
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_ExitMapBest">
+											<defaultLocomotion>Walk</defaultLocomotion>
+										</li>
+									</subNodes>
 								</li>
 							</subNodes>
 						</li>
@@ -278,15 +354,25 @@
 				<li Class="ThinkNode_ConditionalColonist">
 					<invert>true</invert>
 					<subNodes>
-						<li Class="JobGiver_ExitMapBest">
-							<defaultLocomotion>Walk</defaultLocomotion>
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>Misc</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_ExitMapBest">
+									<defaultLocomotion>Walk</defaultLocomotion>
+								</li>
+							</subNodes>
 						</li>
 					</subNodes>
 				</li>
 
 				<!-- If you can't leave, just wander -->
-				<li Class="JobGiver_WanderAnywhere">
-					<maxDanger>Deadly</maxDanger>
+				<li Class="ThinkNode_Tagger">
+					<tagToGive>Idle</tagToGive>
+					<subNodes>
+						<li Class="JobGiver_WanderAnywhere">
+							<maxDanger>Deadly</maxDanger>
+						</li>
+					</subNodes>
 				</li>
 
 				<li Class="JobGiver_IdleError" />

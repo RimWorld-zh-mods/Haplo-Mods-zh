@@ -24,6 +24,26 @@
 			<li>
 				<compClass>CompAttachBase</compClass>
 			</li>
+			<li Class="AIPawn.CompProperties_NeedMaximizing">
+				<compClass>AIPawn.CompNeedMaximizing</compClass>
+				<needDefs>
+					<li>
+						<resourceDef>Food</resourceDef>
+					</li>
+					<li>
+						<resourceDef>Joy</resourceDef>
+					</li>
+					<li>
+						<resourceDef>Beauty</resourceDef>
+					</li>
+					<li>
+						<resourceDef>Comfort</resourceDef>
+					</li>
+					<li>
+						<resourceDef>Space</resourceDef>
+					</li>
+				</needDefs>
+			</li>
 		</comps>
 		<drawGUIOverlay>true</drawGUIOverlay>
 

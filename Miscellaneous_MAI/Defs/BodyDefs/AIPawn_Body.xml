@@ -21,11 +21,12 @@
 					</groups>
 					<parts>
 						<li>
-							<def>MechanicalHead</def>
+							<def>Head</def>
 							<coverage>0.72</coverage>
 							<groups>
 								<li>UpperHead</li>
 								<li>FullHead</li>
+								<li>HeadAttackTool</li>
 							</groups>
 							<parts>
 								<li>
@@ -88,7 +89,8 @@
 							</parts>
 						</li>
 					</parts>
-				</li><li>
+				</li>
+				<li>
 					<def>LeftMechanicalShoulder</def>
 					<coverage>0.1</coverage>
 					<groups>
