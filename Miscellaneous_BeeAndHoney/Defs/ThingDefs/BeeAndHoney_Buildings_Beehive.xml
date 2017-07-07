@@ -35,8 +35,8 @@
 			</damageData>
 		</graphicData>
 		<CostList>
-			<WoodLog>40</WoodLog>
 			<HoneycombWithQueen>1</HoneycombWithQueen>
+			<WoodLog>40</WoodLog>
 		</CostList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -50,7 +50,7 @@
 		<useHitPoints>True</useHitPoints>
 		<tickerType>Normal</tickerType>
 		<statBases>
-			<WorkToBuild>2000</WorkToBuild>
+			<WorkToBuild>3200</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-2</Beauty>

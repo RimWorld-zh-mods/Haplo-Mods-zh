@@ -56,8 +56,8 @@
 		</statBases>
 		<ingestible>
 			<tasteThought>AteHoney</tasteThought>
-			<preferability>DesperateOnly</preferability>
-			<foodType>CarnivoreAnimal</foodType>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>VegetableOrFruit</foodType>
 			<nutrition>0.05</nutrition>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestEffect>EatVegetarian</ingestEffect>
